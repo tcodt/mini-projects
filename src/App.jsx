@@ -1,6 +1,8 @@
 // import StarRating from "./components/StarRating/StarRating";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
-import LoadMoreData from "./components/LoadMoreData/LoadMoreData";
+// import LoadMoreData from "./components/LoadMoreData/LoadMoreData";
+import treeData from "./components/TreeView/Data";
+import TreeView from "./components/TreeView/TreeView";
 
 export default function App() {
   return (
@@ -12,7 +14,10 @@ export default function App() {
       {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={1} limit={10} /> */}
 
       {/* Load more data component */}
-      <LoadMoreData />
+      {/* <LoadMoreData /> */}
+
+      {/* Tree view component */}
+      <TreeView menus={treeData} />
     </div>
   );
 }
